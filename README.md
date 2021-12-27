@@ -34,3 +34,8 @@ Run mkdocs --version to check that everything worked okay.
 
 `$ mkdocs --version`<br>
 mkdocs, version 1.2.0 from /usr/local/lib/python3.8/site-packages/mkdocs (Python 3.8)
+
+### Local server 
+Make sure you're in the same directory as the mkdocs.yml configuration file, and then start the server by running the mkdocs serve command:
+
+`mkdocs serve`
