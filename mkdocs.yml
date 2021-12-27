@@ -1,0 +1,8 @@
+site_name: Hello World
+nav:
+    - Home: index.md
+    - Commands: commands.md
+theme: 
+    name: darkly
+    nav_style: dark
+
