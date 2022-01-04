@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Basic Sintax - Hello World</title>
+        <title>Complete Syntax - Hello World</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,11 +36,11 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">Basic Sintax</a>
-                            </li>
                             <li class="navitem">
-                                <a href="../syntax/" class="nav-link">Complete Syntax</a>
+                                <a href="../commands/" class="nav-link">Basic Sintax</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Complete Syntax</a>
                             </li>
                         </ul>
 
@@ -51,12 +51,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../commands/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../syntax/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -78,45 +78,18 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#basics-commands" class="nav-link">Basics commands.</a>
+            <li class="nav-item" data-level="2"><a href="#tables" class="nav-link">Tables</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#titles" class="nav-link">Titles</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#heading-level-1" class="nav-link">Heading level 1</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#heading-level-2" class="nav-link">Heading level 2</a>
+            <li class="nav-item" data-level="2"><a href="#alignment-tables" class="nav-link">Alignment Tables</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#bold" class="nav-link">Bold</a>
+            
+            <li class="nav-item" data-level="2"><a href="#block-of-code" class="nav-link">Block of code</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#italic" class="nav-link">Italic</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#bold-and-italic" class="nav-link">Bold and Italic</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#order-list" class="nav-link">Order List</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#unorder-list" class="nav-link">Unorder List</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#images" class="nav-link">Images</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -124,52 +97,92 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="basics-commands">Basics commands.</h1>
-<hr />
-<p>Markdown syntax is a lighweight markup language for creating formatted text. 
-<strong>John Gruber</strong> and <strong>Aaron Swartz</strong> created Markdown in 2004.</p>
-<h2 id="titles">Titles</h2>
-<h1 id="heading-level-1">Heading level 1</h1>
-<p>Syntax: <code># Heading level 1</code>      </p>
-<h2 id="heading-level-2">Heading level 2</h2>
-<p>Syntax:
-<code>## Heading level 2</code></p>
-<h3 id="heading-level-3">Heading level 3</h3>
-<p>Syntax:
-<code>#### Heading level 3</code></p>
-<h4 id="heading-level-4">Heading level 4</h4>
-<p>Syntax:
-<code>##### Heading level 4</code></p>
-<h5 id="heading-level-5">Heading level 5</h5>
-<p>Syntax:
-<code>##### Heading level 5</code></p>
-<h6 id="heading-level-6">Heading level 6</h6>
-<p>Syntax:
-<code>###### Heading level 6</code></p>
-<h2 id="bold">Bold</h2>
-<p>This is a paragraph with <strong>bold character</strong>. 
-The sistax is: <code>** Your Text **</code></p>
-<h2 id="italic">Italic</h2>
-<p>This is a paragraph with <em>italic character</em>. 
-The sistax is: <code>* Your Text *</code></p>
-<h2 id="bold-and-italic">Bold and Italic</h2>
-<p>This is a paragraph with <strong><em>bold character</em></strong>. 
-The sistax is: <code>*** Your Text ***</code></p>
-<h2 id="order-list">Order List</h2>
-<p>You need to write a some number with one dot</p>
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-</ol>
-<h2 id="unorder-list">Unorder List</h2>
-<p>Sintax: <code>* Item 1</code> or <code>- Item 1</code> or <code>+ Item 1</code></p>
-<ul>
-<li>Item 1 </li>
-<li>Item 2 </li>
-</ul>
-<h2 id="images">Images</h2>
-<p>Sintax:  <code>![Gato](./gato-risa.jpeg)</code>.<br>
-<img alt="Gato" src="../gato-risa.jpeg" /></p></div>
+<h2 id="tables">Tables</h2>
+<p>To add a table, use three or more  hypherns <code>---</code> to create each column´s header. 
+Use pipes <code>|</code> to separate each column.</p>
+<h5 id="syntax">Syntax:</h5>
+<pre><code>| Syntax    | Description |
+|   ---     |    ---      |
+| Header    |    Title    |
+| Paragraph 1 |    Text 1    |
+| Paragraph 2 |    Text 2    |
+</code></pre>
+<h5 id="render">Render:</h5>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph 1</td>
+<td>Text 1</td>
+</tr>
+<tr>
+<td>Paragraph 2</td>
+<td>Text 2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alignment-tables">Alignment Tables</h2>
+<h5 id="syntax_1">Syntax:</h5>
+<pre><code>| Syntax          | Description          | Test Text       |
+|   :---          |       :---:          |       ---:      |
+|  Left Alignment |    Center Alignment  | Right Alignment |
+| Paragraph 1     |    Text 1            |     Text 1      |
+| Paragraph 2     |    Text 2            |     Text 2      |
+</code></pre>
+<h5 id="render_1">Render:</h5>
+<table>
+<thead>
+<tr>
+<th align="left">Syntax</th>
+<th align="center">Description</th>
+<th align="right">Test Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Left Alignment</td>
+<td align="center">Center Alignment</td>
+<td align="right">Right Alignment</td>
+</tr>
+<tr>
+<td align="left">Paragraph 1</td>
+<td align="center">Text 1</td>
+<td align="right">Text 1</td>
+</tr>
+<tr>
+<td align="left">Paragraph 2</td>
+<td align="center">Text 2</td>
+<td align="right">Text 2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="block-of-code">Block of code</h2>
+<p>If we can write a block of code like one Json. You need to write <code>```</code> at the begining and other <code>```</code> at the end.</p>
+<h5 id="syntax_2">Syntax:</h5>
+<p><code>```</code></p>
+<pre><code>var myObject = {
+    name = &quot;Sergio&quot;,
+    nameExample = &quot;Block of code&quot;,
+    GitHub = &quot;https://github.com/sergio-gonzalez-sainz&quot;
+}
+</code></pre>
+<p><code>```</code></p>
+<h5 id="render_2">Render:</h5>
+<pre><code>var myObject = {
+    name = &quot;Sergio&quot;,
+    nameExample = &quot;Block of code&quot;,
+    GitHub = &quot;https://github.com/sergio-gonzalez-sainz&quot;
+}
+</code></pre></div>
             </div>
         </div>
 
