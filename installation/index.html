@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Complete Syntax - MKdocs</title>
+        <title>Installation - MKdocs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,10 +36,10 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="navitem">
-                                <a href="../installation/" class="nav-link">Installation</a>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Installation</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Markdown Syntax <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -48,7 +48,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Complete Syntax</a>
+    <a href="../syntax/" class="dropdown-item">Complete Syntax</a>
 </li>
                                 </ul>
                             </li>
@@ -61,12 +61,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../commands/" class="nav-link">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../commands/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -88,17 +88,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#tables" class="nav-link">Tables</a>
+            <li class="nav-item" data-level="2"><a href="#requirements" class="nav-link">Requirements</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#alignment-tables" class="nav-link">Alignment Tables</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#block-of-code" class="nav-link">Block of code</a>
+            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -107,92 +102,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="tables">Tables</h2>
-<p>To add a table, use three or more  hypherns <code>---</code> to create each column´s header. 
-Use pipes <code>|</code> to separate each column.</p>
-<h5 id="syntax">Syntax:</h5>
-<pre><code>| Syntax    | Description |
-|   ---     |    ---      |
-| Header    |    Title    |
-| Paragraph 1 |    Text 1    |
-| Paragraph 2 |    Text 2    |
+<h2 id="requirements">Requirements</h2>
+<p>MkDocs requires a recent version of Python and the Python package manager, pip, to be installed on your system.</p>
+<p>You can check if you already have these installed from the command line:</p>
+<pre><code>$ python --version
+Python 3.8.2 
 </code></pre>
-<h5 id="render">Render:</h5>
-<table>
-<thead>
-<tr>
-<th>Syntax</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph 1</td>
-<td>Text 1</td>
-</tr>
-<tr>
-<td>Paragraph 2</td>
-<td>Text 2</td>
-</tr>
-</tbody>
-</table>
-<h2 id="alignment-tables">Alignment Tables</h2>
-<h5 id="syntax_1">Syntax:</h5>
-<pre><code>| Syntax          | Description          | Test Text       |
-|   :---          |       :---:          |       ---:      |
-|  Left Alignment |    Center Alignment  | Right Alignment |
-| Paragraph 1     |    Text 1            |     Text 1      |
-| Paragraph 2     |    Text 2            |     Text 2      |
+<pre><code>$ pip --version
+pip 20.0.2 from /usr/local/lib/python3.8/site-packages/pip (python 3.8)
 </code></pre>
-<h5 id="render_1">Render:</h5>
-<table>
-<thead>
-<tr>
-<th align="left">Syntax</th>
-<th align="center">Description</th>
-<th align="right">Test Text</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Left Alignment</td>
-<td align="center">Center Alignment</td>
-<td align="right">Right Alignment</td>
-</tr>
-<tr>
-<td align="left">Paragraph 1</td>
-<td align="center">Text 1</td>
-<td align="right">Text 1</td>
-</tr>
-<tr>
-<td align="left">Paragraph 2</td>
-<td align="center">Text 2</td>
-<td align="right">Text 2</td>
-</tr>
-</tbody>
-</table>
-<h2 id="block-of-code">Block of code</h2>
-<p>If we can write a block of code like one Json. You need to write <code>```</code> at the begining and other <code>```</code> at the end.</p>
-<h5 id="syntax_2">Syntax:</h5>
-<p><code>```</code></p>
-<pre><code>var myObject = {
-    name = &quot;Sergio&quot;,
-    nameExample = &quot;Block of code&quot;,
-    GitHub = &quot;https://github.com/sergio-gonzalez-sainz&quot;
-}
+<h2 id="installation">Installation</h2>
+<h4 id="installing-pip">Installing pip</h4>
+<p>If you're using a recent version of Python, the Python package manager, pip, is most likely installed by default. However, you may need to upgrade pip to the lasted version:</p>
+<p><code>$ pip install --upgrade pip</code><br>
+If you need to install pip for the first time, download <code>get-pip.py</code> . Then run the following command to install it:</p>
+<p><code>$ python get-pip.py</code></p>
+<h3 id="installing-mkdocs">Installing MkDocs</h3>
+<p>Install the mkdocs package using pip. To install MkDocs, run the following command from the command line:</p>
+<p><code>$ pip install mkdocs</code></p>
+<p>You should now have the mkdocs command installed on your system.
+Run <code>mkdocs --version</code> to check that everything worked okay.</p>
+<pre><code>$ mkdocs --version
+mkdocs, version 1.2.0 from /usr/local/lib/python3.8/site-packages/mkdocs (Python 3.8)
 </code></pre>
-<p><code>```</code></p>
-<h5 id="render_2">Render:</h5>
-<pre><code>var myObject = {
-    name = &quot;Sergio&quot;,
-    nameExample = &quot;Block of code&quot;,
-    GitHub = &quot;https://github.com/sergio-gonzalez-sainz&quot;
-}
-</code></pre></div>
+<h3 id="local-server">Local server</h3>
+<p>Make sure you're in the same directory as the <code>mkdocs.yml</code> configuration file, and then start the server by running the <code>mkdocs serve</code> command:</p>
+<p><code>$ mkdocs serve</code></p></div>
             </div>
         </div>
 
